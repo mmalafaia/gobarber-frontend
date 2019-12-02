@@ -35,7 +35,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
   },
   settings: {
-    'import/resolve': {
+    'import/resolver': {
       'babel-plugin-root-import': {
         rootPathSuffix: 'src',
       },
