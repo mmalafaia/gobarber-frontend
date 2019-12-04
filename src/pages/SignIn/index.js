@@ -16,11 +16,11 @@ const schema = Yup.object().shape({
 });
 
 export default function SignIn() {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
   const loading = useSelector(state => state.auth.loading);
 
   function handleSubmit({ email, password }) {
-    dispath(signInRequest(email, password));
+    dispatch(signInRequest(email, password));
   }
 
   return (
